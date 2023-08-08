@@ -1,0 +1,80 @@
+<title>Form</title>
+
+
+<style>
+    table td{
+        margin: 20px;
+    }
+    
+    table tr{
+      height: 100%;
+      width: 100%;
+      border: 20px solid #422800;
+      background-color: rgb(253, 225, 152);
+    }
+
+    td{
+      border-right: 5.5px solid #422800;
+      border-bottom: 4px solid #422800;
+      border-left: 1px solid #422800;
+      border-top: 1px solid #422800;
+      opacity: 50;
+      padding: 5px;
+    }
+     form{
+        padding: 50px;
+
+     }    
+  .container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #button{
+    background-color: #ffffff;
+  border: 2px solid #422800;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 3px;
+  border-radius: 20px;
+  }
+  #button:hover {
+  background-color: #fbeee0;
+}
+
+#button:active {
+  box-shadow: coral 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+</style>
+
+<div class="container">
+        <form action="" method="POST" class="form" name="myform" >
+            <h1 style="text-align: center ; ">Reset Password</h1> 
+            <div style="align-items: center;">
+                <table>
+                    <tr>
+                        <td>Password:</td>
+                        <td> <input type="text" id="password" name="password" placeholder="Enter Password" required><br></td>
+                    </tr>
+                    <tr>
+                      <td>Confirm Password:</td>
+                      <td> <input type="text" id="confirm_password" name="confirm_password" placeholder="Enter Password" required><br></td>
+                  </tr>
+                </table>
+            </div>
+            <div class="buttons" style="justify-content: center; align-items: center; display: flex;">
+                <input type="submit" id='button' value="Submit" style="width: 200px; height: 30px; margin-top: 20px;" ><input type="reset" id='button' value="Reset" style="margin-top: 20px; width: 200px; height: 30px;">
+            </div>
+        </form>
+</div>
